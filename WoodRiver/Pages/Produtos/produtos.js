@@ -1,5 +1,9 @@
 let precos
 
+window.addEventListener('load', function() {
+  trocaDeCor();
+});
+
 let myInterval = setInterval(function promocao() {
     alert('Aproveite nossa promoção')
     precos = document.getElementsByTagName('p')

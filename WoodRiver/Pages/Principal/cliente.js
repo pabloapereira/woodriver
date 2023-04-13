@@ -7,5 +7,6 @@ class Cliente{
         console.log('estou andando')
     }
 }
-const Cliente1 = new Cliente();
-//
+
+const nome = window.prompt('Qual seu nome')
+const Cliente1 = new Cliente(nome);

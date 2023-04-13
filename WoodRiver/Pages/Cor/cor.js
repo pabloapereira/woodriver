@@ -1,5 +1,5 @@
 (function(){
-    alert('Essas são umas das nossas principais cores')
+    alert('Essas são umas das nossas principais cores');
 })()
 
 let p = document.getElementsByTagName('p');
@@ -9,5 +9,3 @@ function corPreco() {
         p[i].style.color = "red";
     }
 }
-corPreco();
-//Deu!!?
