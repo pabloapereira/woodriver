@@ -3,8 +3,9 @@ class Cliente{
         this.nome = nome;
     }
 
-    andar() { 
-        console.log('estou andando')
+    capitalizar() {
+        let nomeCap = this.nome.charAt(0).toUpperCase() + this.nome.slice(1);
+        return nomeCap;
     }
 }
 

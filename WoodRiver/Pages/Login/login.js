@@ -1,32 +1,40 @@
-/*let email = document.getElementById('ilogin')
-let senha = document.getElementById('isenha')
+const button = document.getElementsByName('button')[0];
+const fundo = document.getElementById('login')
 
-//inplemnetar uma validaão de input
-function validaCadastro(){
-    if(email < 5){
-        alert('digite um email valio')
-    }else{
-        alert('gygy')
-    }
-}*/
-
-let trocarInput = document.querySelector('input')
-    function trocar() {
-    trocarInput.addEventListener('keydown', function(event) {
+function mudarFundo() {
+    fundo.addEventListener('keyCode', function(event) {
         if(event.keyCode === 13) {
-            console.log('presionou a tecla enter')
+            fundo.style.background = 'red';
         }
-    })//tenter fazer
+    })
 }
 
-const button = document.getElementsByName('button')[0];
+/*function mudarFundo() {
+    const cor = document.getElementById('cor');
+    const fundo = ['antiquewhite', '#871d1d', 'white'];
+  
+    cor.addEventListener('keydown', function(event) {
+      if (event.keyCode === 13) {
+        fundo.forEach(function(element) {
+          cor.style.background = element;
+        });
+      }
+    });
+  }*/
+
+ /* const element = document.getElementById('myElement');
+
+element.addEventListener('keydown', function(event) {
+  console.log(event.keyCode);
+});*/
+  
 
 button.addEventListener('focus', mudarCor);
-button.addEventListener('blur', desfocar)
+button.addEventListener('blur', desfocar);
 
 function mudarCor() {
-    this.style.background = 'green'
-    this.style.border = '2px solid green'
+    this.style.background = 'green';
+    this.style.border = '2px solid green';
 }
 
 function desfocar() {
