@@ -50,7 +50,7 @@ Tratadores de Evento
 
 Objetos Nativos
 
-- [ ] Usar pelo menos 3 métodos de manipulação de array
+- [x] Usar pelo menos 3 métodos de manipulação de array
 - [x] Usar laço de repetição (for..in ou for..of ou forEach)
 - [x] Usar pelo menos 3 métodos para manipulação de string
 - [x] String Template
@@ -59,7 +59,7 @@ Objetos
 
 - [x] Criar objeto usando função construtora ou notação literal
 - [x] Criar objetos a partir da definição de classes do ES6
-- [ ] Usar herança prototipal nativa ou herança de classes do ES6
+- [x] Usar herança prototipal nativa ou herança de classes do ES6
 
 Qualidade do código
 

@@ -1,7 +1,11 @@
+import trocandoCorPre from "../Util/trocar-cor.js"
+
+const trocarPreco = new trocandoCorPre.TrocarPreco();
+
 let precos
 
 window.addEventListener('load', function() {
-  trocaDeCor();
+  trocarPreco.trocaDeCor();
 });
 
 let myInterval = setInterval(function promocao() {
@@ -22,7 +26,7 @@ setTimeout(() => {
     
 }, 15000)
 
-function trocaDeCor() {
+/*function trocaDeCor() {
     const precos = document.querySelectorAll('p')
   
     function mouseSobre(event) {
@@ -41,5 +45,5 @@ function trocaDeCor() {
     return [mouseSobre, mouseFora]
   }
   
-  const minhaFuncao = trocaDeCor()
+  const minhaFuncao = trocaDeCor()*/
   
