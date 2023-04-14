@@ -25,25 +25,4 @@ setTimeout(() => {
     clearInterval(myInterval)
     
 }, 15000)
-
-/*function trocaDeCor() {
-    const precos = document.querySelectorAll('p')
-  
-    function mouseSobre(event) {
-      event.target.style.color = 'green'
-    }
-  
-    function mouseFora(event) {
-      event.target.style.color = 'blue'
-    }
-  
-    precos.forEach(function(p) {
-      p.addEventListener('mouseover', mouseSobre)
-      p.addEventListener('mouseout', mouseFora)//descobrir como passar a cor rgb
-    })
-  
-    return [mouseSobre, mouseFora]
-  }
-  
-  const minhaFuncao = trocaDeCor()*/
   

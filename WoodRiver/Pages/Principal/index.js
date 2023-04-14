@@ -6,7 +6,7 @@ alert(alo())
 
 var idade = prompt('qual sua idade')
 var nome = prompt('qual seu nome')
-confirm(`seu nome é ${nome()} ?`)
+confirm(`seu nome é ${nome} ?`)
 
 var validaIdade = function(idade){
   return idade < 18

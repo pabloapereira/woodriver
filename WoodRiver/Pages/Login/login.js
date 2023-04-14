@@ -1,13 +1,13 @@
 const button = document.getElementsByName('button')[0];
-const fundo = document.getElementById('login')
+const tittle = document.getElementById('titulo');
 
-function mudarFundo() {
-    fundo.addEventListener('keyCode', function(event) {
-        if(event.keyCode === 13) {
-            fundo.style.background = 'red';
+(function(title) {
+    document.addEventListener('keydown', function(event) {
+        if(event.code === "Enter") {
+          title.style.color = 'red';
         }
     })
-}
+})(tittle);
 
 /*function mudarFundo() {
     const cor = document.getElementById('cor');
@@ -41,3 +41,6 @@ function desfocar() {
     this.style.background = '#7CE14C';
 }
 
+function clicar(event) {
+  console.log(event.target);
+}

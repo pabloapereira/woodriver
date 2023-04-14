@@ -1,11 +1,10 @@
-let largura = window.screen.width
+/*let largura = window.screen.width
 let cor = document.getElementById('cor')
 
-/*/function tamanahoTela(largura) {
+function tamanahoTela(largura) {
     largura > 992 && largura <= 1200{
         cor.style.color = 'red'
 }
-
 /*(function() {
     if(largura > 992 && largura < 1200){
         cor.addEventListener('mouseover', function() {
