@@ -1,5 +1,8 @@
 const button = document.getElementsByName('button')[0];
 const tittle = document.getElementById('titulo');
+const fundoLogin = document.getElementById('login');
+const corFundo = ['antiquewhite', '#871d1d', 'white'];
+let indiceCor = 0;
 
 (function(title) {
     document.addEventListener('keydown', function(event) {
@@ -8,6 +11,28 @@ const tittle = document.getElementById('titulo');
         }
     })
 })(tittle);
+
+corFundo.unshift('crimson', 'rosewood', 'purple');
+corFundo.sort();
+
+function estaPresente() {
+  const presente = corFundo.some(function(cor){
+
+  })
+  if (presente) 
+    return 'presente';
+
+  return 'não';
+}
+
+console.log(estaPresente())
+
+function mudarFundo() {
+  fundoLogin.style.backgroundColor = corFundo[indiceCor];
+  indiceCor = (indiceCor + 1) %  corFundo.length;
+}
+
+setInterval(mudarFundo, 5000);
 
 /*function mudarFundo() {
     const cor = document.getElementById('cor');
