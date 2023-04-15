@@ -68,4 +68,4 @@ function desfocar() {
 
 function clicar(event) {
   console.log(event.target);
-}
+}//
