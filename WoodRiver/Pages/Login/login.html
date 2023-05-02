@@ -14,15 +14,19 @@
         <main>          
             <div id="login" name="vc">
                 <h1 id="titulo">login</h1> 
+                <form id="formulario" action="http://127.0.0.1:5500/WoodRiver/Pages/Principal/index.html" onsubmit="return validarCampo()">
                 <div class="campo">
                     <label for="ilogin"><i class="material-symbols-outlined">account_circle</i</label>
-                    <input type="email" name="login" id="ilogin" placeholder="seu email">
+                    <input type="email" name="login" id="ilogin" placeholder="seu email" required>
                 </div>
                 <div class="campo">
                     <label for="isenha"><i class="material-icons">lock</i></label>
-                    <input type="password" name="senha" id="isenha" placeholder="sua senha">
+                    <input type="password" name="senha" id="isenha" placeholder="sua senha" required>
                 </div>
-                <a href="http://127.0.0.1:5500/WoodRiver/Pages/Principal/index.html"><button name="button" onclick="clicar(event)">logar</button></a>
+                <a href="http://127.0.0.1:5500/WoodRiver/Pages/Principal/index.html">
+                    <button type="submit" name="button">logar</button>
+                </a>
+                </form>               
             </div>
         </main>
         <script src="/WoodRiver/Pages/Login/login.js"></script>
