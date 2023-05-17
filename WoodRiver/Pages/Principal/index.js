@@ -1,12 +1,12 @@
 const alo = function() {
-    return 'Bem-vindo'
+  return 'Bem-vindo';
 }
 
 alert(alo())
 
-var idade = prompt('qual sua idade')
-var nome = prompt('qual seu nome')
-confirm(`seu nome é ${nome} ?`)
+const idade = prompt('qual sua idade');
+const nome = prompt('qual seu nome');
+confirm(`seu nome é ${nome} ?`);
 
 var validaIdade = function(idade){
   return idade < 18
@@ -20,4 +20,4 @@ function validarIdade(idade, validaIdade) {
   }
 }
 
-validarIdade(idade, validaIdade)
+validarIdade(idade, validaIdade);
