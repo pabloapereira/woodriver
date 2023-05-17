@@ -15,18 +15,27 @@
             <div id="login" name="vc">
                 <h1 id="titulo">login</h1> 
                 <form id="formulario" action="http://127.0.0.1:5500/WoodRiver/Pages/Principal/index.html" onsubmit="return validarCampo()">
-                <div class="campo">
-                    <label for="ilogin"><i class="material-symbols-outlined">account_circle</i</label>
-                    <input type="email" name="login" id="ilogin" placeholder="seu email" required>
-                </div>
-                <div class="campo">
-                    <label for="isenha"><i class="material-icons">lock</i></label>
-                    <input type="password" name="senha" id="isenha" placeholder="sua senha" required>
-                </div>
-                <a href="http://127.0.0.1:5500/WoodRiver/Pages/Principal/index.html">
-                    <button type="submit" name="button">logar</button>
-                </a>
-                </form>               
+                    <div class="campo">
+                        <label for="ilogin"><i class="material-symbols-outlined">account_circle</i></label>
+                        <input type="email" name="login" id="ilogin" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" placeholder="seu email" required>
+                        <p id="errorEmail"></p>
+                    </div>
+                    <div class="campo">
+                        <label for="isenha"><i class="material-icons">lock</i></label>
+                        <input type="password" name="senha" id="isenha" placeholder="sua senha" required>
+                        <p id="errorSenha"></p>
+                    </div>
+                    <div id="sugestao" onclick="CaixaSugestao()">
+                        <fieldset>
+                            <legend id="segestao">Sugestão</legend>
+                            <input type="radio" name="sexo" id="yes"> <label for="yes"> Sim</label><br>
+                            <input type="radio" name="sexo" id="no"> <label for="no"> Não</label><br>
+                        </fieldset>
+                    </div>
+                    <a href="http://127.0.0.1:5500/WoodRiver/Pages/Principal/index.html">
+                        <button type="submit" name="button">logar</button>
+                    </a>
+                </form>      
             </div>
         </main>
         <script src="/WoodRiver/Pages/Login/login.js"></script>
