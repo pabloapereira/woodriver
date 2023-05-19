@@ -40,12 +40,11 @@ button.addEventListener('blur', desfocar);
 }*/
 
 function validarCampo() {
-  const nome = document.getElementById('ilogin').value;
+  const email = document.getElementById('ilogin').value;
   const senha = document.getElementById('isenha').value;
   let erroSenha = document.getElementById('errorSenha');
 
-  if(nome !== 'web2@gmail.com') {
-    alert('Email invalido');
+  if(email !== 'web2@gmail.com') {
     return false;
   }
   
