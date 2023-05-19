@@ -1,13 +1,13 @@
-"use strict";
+'use strict';
 
 const alo = function() {
-    return "Bem-vindo";
-}
+    return 'Bem-vindo';
+};
 
 alert(alo());
 
-var idade = prompt("qual sua idade");
-var nome = prompt("qual seu nome");
+var idade = prompt('qual sua idade');
+var nome = prompt('qual seu nome');
 confirm(`seu nome é ${nome} ?`);
 
 let validaIdade = function(idade){
@@ -16,9 +16,9 @@ let validaIdade = function(idade){
 
 function validarIdade(idade, validaIdade) {
   if (validaIdade(idade)) {
-    alert("Pesa autorização dos responsaveis antes de realizar uma compra");
+    alert('Pesa autorização dos responsaveis antes de realizar uma compra');
   } else {
-    alert("Boas compras");
+    alert('Boas compras');
   }
 }
 

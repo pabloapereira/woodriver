@@ -1,30 +1,30 @@
-"use strict";
+'use strict';
 
 
-import trocandoCorPre from "../Util/trocar-cor.js";
+import trocandoCorPre from '../Util/trocar-cor.js';
 
 const trocarPreco = new trocandoCorPre.TrocarPreco();
 
 let precos;
 
-window.addEventListener("load", function() {
+window.addEventListener('load', function() {
   trocarPreco.trocaDeCor();
 });
 
 const mudarPreco = (function() {
     let myInterval = setInterval(function promocao() {
-        alert("Aproveite nossa promoção");
-        precos = document.getElementsByTagName("p");
+        alert('Aproveite nossa promoção');
+        precos = document.getElementsByTagName('p');
         for (let i = 0; i < precos.length; i++) {
-            precos[i].innerHTML = "800,00";
+            precos[i].innerHTML = '800,00';
         }
     }, 5000);
     
     setTimeout(() => {
-        alert("A promoção acabou");
-        precos = document.getElementsByTagName("p");
+        alert('A promoção acabou');
+        precos = document.getElementsByTagName('p');
         for (let i = 0; i < precos.length; i++) {
-            precos[i].innerHTML = "999,00";
+            precos[i].innerHTML = '999,00';
         }
         clearInterval(myInterval);
         
@@ -32,18 +32,18 @@ const mudarPreco = (function() {
 });
 
 let myInterval = setInterval(function promocao() {
-    alert("Aproveite nossa promoção");
-    precos = document.getElementsByTagName("p");
+    alert('Aproveite nossa promoção');
+    precos = document.getElementsByTagName('p');
     for (let i = 0; i < precos.length; i++) {
-        precos[i].innerHTML = "800,00";
+        precos[i].innerHTML = '800,00';
     }
 }, 5000);
 
 setTimeout(() => {
-    alert("A promoção acabou");
-    precos = document.getElementsByTagName("p");
+    alert('A promoção acabou');
+    precos = document.getElementsByTagName('p');
     for (let i = 0; i < precos.length; i++) {
-        precos[i].innerHTML = "999,00";
+        precos[i].innerHTML = '999,00';
     }
     clearInterval(myInterval);
     
