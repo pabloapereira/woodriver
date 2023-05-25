@@ -56,7 +56,8 @@ function validarCampo() {
   return true;
 }
 
-const email = document.getElementById('ilogin');
+const meuFormulario = document.getElementById('formulario');
+const email = meuFormulario.elements[0];
 
 email.addEventListener('invalid', function(event) {
   if (email.validity.typeMismatch) {
@@ -66,7 +67,7 @@ email.addEventListener('invalid', function(event) {
   }
 });
 
-function CaixaSugestao() {
+function caixaSugestao() {
   const op = document.querySelector('input[name="sexo"]:checked').id;
   const sim = document.getElementById('yes');
   const sugestao = document.getElementById('sugestao');
