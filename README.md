@@ -103,7 +103,7 @@ jQuery
 
 Web Storage
 
-- [ ] LocalStorage ou SessionStorage
+- [x] LocalStorage ou SessionStorage
 - [ ] Leitura e escrita de dados simples
 - [ ] Leitura e escrita de JSON
 - [ ] Criar e guardar o dado de um cookie

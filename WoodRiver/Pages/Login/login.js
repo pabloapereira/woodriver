@@ -44,12 +44,12 @@ function validarCampo() {
   const senha = document.getElementById('isenha').value;
   let erroSenha = document.getElementById('errorSenha');
 
-  if(email !== 'web2@gmail.com') {
+  if(email !== localStorage.getItem('email')) {
     return false;
   }
   
-  if(senha !== '123456') {
-    erroSenha.innerHTML = 'senha incorreta';
+  if(senha !== localStorage.getItem('senha')) {
+    erroSenha.innerHTML = 'senha incorreta ou não cadastrada';
     return false;
   }
 
