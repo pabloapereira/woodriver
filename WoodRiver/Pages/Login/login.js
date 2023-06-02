@@ -33,7 +33,7 @@ function desfocar() {
   button.style.background = '#7CE14C';
 }
 
-button.addEventListener('focus', mudarCor);
+$('button').on('focus', mudarCor);
 button.addEventListener('blur', desfocar);
 /*function clicar(event) {
   console.log(event.target);
@@ -51,6 +51,24 @@ function validarCampo() {
   if(senha !== '123456') {
     erroSenha.innerHTML = 'senha incorreta';
     return false;
+  }
+
+  return true;
+}
+
+function enviarUser() {
+  const email = document.getElementById('ilogin').value;
+  const senha = document.getElementById('isenha').value;
+  if (email === '') {
+    return false;
+  }else {
+    localStorage.setItem('email', email);
+  }
+  
+  if (senha === '') {
+    return false;
+  } else {
+    localStorage.setItem('senha', senha);
   }
 
   return true;
@@ -86,9 +104,4 @@ function caixaSugestao() {
   }
 }
 
-const sim = document.getElementById('formulario.yes');//pedir pro professor
-//utilizar aspas simples;
-/*usar arrow functios, use String template, usar aspas simples, let ou const, ponto e virgula, 
-identação, nome dos arquivos em minusculo e com "_" praseparar, uso do camelCase para variavel,
-usar espaços em brancos para separar operador, usar ===
- */
+const sim = document.getElementById('formulario.yes');

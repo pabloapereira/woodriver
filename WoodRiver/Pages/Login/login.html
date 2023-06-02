@@ -27,17 +27,20 @@
                     </div>
                     <div id="sugestao" onclick="CaixaSugestao()">
                         <fieldset>
-                            <legend id="segestao">Sugestão</legend>
+                            <legend id="sugestao">Sugestão</legend>
                             <input type="radio" name="sexo" id="yes"> <label for="yes"> Sim</label><br>
                             <input type="radio" name="sexo" id="no"> <label for="no"> Não</label><br>
                         </fieldset>
                     </div>
                     <a href="http://127.0.0.1:5500/WoodRiver/Pages/Principal/index.html">
                         <button type="submit" name="button">logar</button>
+                        <button type="submit" name="enviar" id="enviar" onclick="enviarUser()">cadastrar</button>
                     </a>
                 </form>              
             </div>
         </main>
+        <script src="jquery.mask.js"></script>
+        <script src="https://code.jquery.com/jquery-3.7.0.min.js" integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
         <script src="/WoodRiver/Pages/Login/login.js"></script>
     </body>
 </html>

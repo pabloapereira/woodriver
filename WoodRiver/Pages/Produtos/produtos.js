@@ -7,7 +7,7 @@ const trocarPreco = new trocandoCorPre.TrocarPreco();
 
 let precos;
 
-window.addEventListener('load', function() {
+addEventListener('load', function() {
   trocarPreco.trocaDeCor();
 });
 
@@ -31,7 +31,7 @@ const mudarPreco = (function() {
     }, 15000);
 });
 
-let myInterval = setInterval(function promocao() {
+let myInterval = setInterval(function promocao() { //tentar arrumar isso
     alert('Aproveite nossa promoção');
     precos = document.getElementsByTagName('p');
     for (let i = 0; i < precos.length; i++) {
@@ -41,7 +41,7 @@ let myInterval = setInterval(function promocao() {
 
 setTimeout(() => {
     alert('A promoção acabou');
-    precos = document.getElementsByTagName('p');
+    precos = $('p');
     for (let i = 0; i < precos.length; i++) {
         precos[i].innerHTML = '999,00';
     }
