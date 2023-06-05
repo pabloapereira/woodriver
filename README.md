@@ -98,14 +98,14 @@ jQuery
 - [x] Efeitos fade ou slide
 - [x] Especificar o tratador de algum evento via jQuery
 - [ ] Manipulação do CSS via função css() e addClass()/removeClass()
-- [ ] Manipulação do conteúdo de um input e div usando jQuery
+- [x] Manipulação do conteúdo de um input e div usando jQuery
 - [ ] Aplicar um plugin do jQuery (por exemplo, jQuery Mask Plugin)
 
 Web Storage
 
 - [x] Leitura e escrita de dados simples
 - [ ] Leitura e escrita de JSON
-- [ ] Criar e guardar o dado de um cookie
+- [x] Criar e guardar o dado de um cookie
 
 Ajax com Backend
 - [ ] Implementação funcional (basta fazer funcionar uma requisição) do backend em ExpressJS na plataforma Node e requisições AJAX.

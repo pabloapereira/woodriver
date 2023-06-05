@@ -88,7 +88,7 @@ email.addEventListener('invalid', function(event) {
 function caixaSugestao() {
   const op = document.querySelector('input[name="sexo"]:checked').id;
   const sim = document.getElementById('yes');
-  const sugestao = document.getElementById('sugestao');
+  const sugestao = document.getElementById('#sugestao');
 
   if(op === sim.id) {
     const inputText = document.createElement('input');

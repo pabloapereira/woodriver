@@ -50,3 +50,28 @@ footer{
     font-size: 26px;
     margin-bottom: 0.6em;
 }
+
+#montarMesa{
+    display: flex;
+    height: 32%;
+    width: 28%;
+    margin-left:30%;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.montarMesa > fieldset {
+    height: 95%;
+    width: 92%;
+}
+
+button {
+    font-size: 1em;
+    width: 20%;
+    height: 40px;
+    background-color: rgb(124, 225, 76);
+    margin-top: 1.5em;
+    margin-bottom: 2%;
+    border-radius: 10px;
+    cursor: pointer;
+}
