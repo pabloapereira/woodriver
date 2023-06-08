@@ -51,18 +51,14 @@ footer{
     margin-bottom: 0.6em;
 }
 
-#montarMesa{
+.montarMesa{
+    background-color: red;
     display: flex;
     height: 32%;
     width: 28%;
     margin-left:30%;
     justify-content: space-around;
     align-items: center;
-}
-
-.montarMesa > fieldset {
-    height: 95%;
-    width: 92%;
 }
 
 button {

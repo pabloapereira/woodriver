@@ -60,7 +60,7 @@ $('#escolha').click(() => {
 
     const inputAzul = document.createElement('input');
     inputAzul.type = 'radio';
-    inputAzul.name = 'corAzul';
+    inputAzul.name = 'cor';
     inputAzul.value = 'azulPerolado';
     inputAzul.id = 'azul';
 
@@ -70,7 +70,7 @@ $('#escolha').click(() => {
 
     const inputVerde = document.createElement('input');
     inputVerde.type = 'radio';
-    inputVerde.name = 'corVerde';
+    inputVerde.name = 'cor';
     inputVerde.value = 'verde';
     inputVerde.id = 'verde';
 
@@ -80,7 +80,7 @@ $('#escolha').click(() => {
 
     const inputBranco = document.createElement('input');
     inputBranco.type = 'radio';
-    inputBranco.name = 'corBranca';
+    inputBranco.name = 'cor';
     inputBranco.value = 'branca';
     inputBranco.id = 'branca';
 
@@ -90,7 +90,7 @@ $('#escolha').click(() => {
     
     const inputPreto = document.createElement('input');
     inputPreto.type = 'radio';
-    inputPreto.name = 'corPreta';
+    inputPreto.name = 'cor';
     inputPreto.value = 'preto';
     inputPreto.id = 'preto';
 
@@ -103,7 +103,7 @@ $('#escolha').click(() => {
 
     const inputImbuia = document.createElement('input');
     inputImbuia.type = 'radio';
-    inputImbuia.name = 'madeiraImbuia';
+    inputImbuia.name = 'madeira';
     inputImbuia.value = 'imbuia';
     inputImbuia.id = 'imbuia';
 
@@ -113,7 +113,7 @@ $('#escolha').click(() => {
 
     const inputCarvalho = document.createElement('input');
     inputCarvalho.type = 'radio';
-    inputCarvalho.name = 'madeiraCarvalho';
+    inputCarvalho.name = 'madeira';
     inputCarvalho.value = 'carvalho';
     inputCarvalho.id = 'carvalho';
 
@@ -123,7 +123,7 @@ $('#escolha').click(() => {
 
     const inputPinus = document.createElement('input');
     inputPinus.type = 'radio';
-    inputPinus.name = 'madeiraPinus';
+    inputPinus.name = 'madeira';
     inputPinus.value = 'pinus';
     inputPinus.id = 'pinus';
 
@@ -133,7 +133,7 @@ $('#escolha').click(() => {
 
     const inputIpe = document.createElement('input');
     inputIpe.type = 'radio';
-    inputIpe.name = 'madeiraipe';
+    inputIpe.name = 'madeira';
     inputIpe.value = 'ipe';
     inputIpe.id = 'ipe';
 
@@ -141,6 +141,10 @@ $('#escolha').click(() => {
     labelIpe.textContent = 'Ipê Roxo';
     labelIpe.htmlFor = 'ipe';
     
+    const button = document.createElement('button');
+    button.id = 'finilize';
+    button.textContent = 'finalizar'; 
+
     fieldsetElement.appendChild(h2Resina);
     fieldsetElement.appendChild(inputAzul);
     fieldsetElement.appendChild(labelAzul);
@@ -159,11 +163,53 @@ $('#escolha').click(() => {
     fieldsetElement.appendChild(labelIpe);
     fieldsetElement.appendChild(inputPinus);
     fieldsetElement.appendChild(labelPinus);
+    fieldsetElement.appendChild(button);
 
     divMontarMesa.appendChild(fieldsetElement);
 
-    var mainElement = document.getElementById('ja');
+    const mainElement = document.getElementById('ja');
     mainElement.appendChild(divMontarMesa);
 
-    $('#escolha').text('enviar op');
+    button.addEventListener('click', () => {
+    const selectedOptions = {};
+    
+    const resinaInputs = document.querySelectorAll('input[name="cor"]');
+    resinaInputs.forEach(input => {
+      if (input.checked) {
+        selectedOptions.resina = input.value;
+      }
+    });
+
+    
+    const madeiraInputs = document.querySelectorAll('input[name="madeira"]');
+    madeiraInputs.forEach(input => {
+      if (input.checked) {
+        selectedOptions.madeira = input.value;
+      }
+    });
+
+    const jsonData = JSON.stringify(selectedOptions);
+    console.log(jsonData);
+  });
 });
+
+$('#finalize').click(() => {
+    const selectedOptions = {};
+
+    const resinaInputs = document.querySelectorAll('input[name^="cor"]');
+    resinaInputs.forEach(input => {
+      if (input.checked) {
+        selectedOptions.resina = input.value;
+      }
+    });
+
+    const madeiraInputs = document.querySelectorAll('input[name="madeira"]');
+    madeiraInputs.forEach(input => {
+      if (input.checked) {
+        selectedOptions.madeira = input.value;
+      }
+    });
+
+    const jsonData = JSON.stringify(selectedOptions);
+    console.log(jsonData);
+  });
