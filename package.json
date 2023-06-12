@@ -11,6 +11,7 @@
     "eslint-plugin-react-hooks": "^4.3.0"
   },
   "dependencies": {
-    "alertifyjs": "^1.13.1"
+    "alertifyjs": "^1.13.1",
+    "json-server": "^0.17.3"
   }
 }

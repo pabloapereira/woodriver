@@ -164,11 +164,16 @@ $('#escolha').click(() => {
     fieldsetElement.appendChild(inputPinus);
     fieldsetElement.appendChild(labelPinus);
     fieldsetElement.appendChild(button);
-
     divMontarMesa.appendChild(fieldsetElement);
 
     const mainElement = document.getElementById('ja');
     mainElement.appendChild(divMontarMesa);
+
+    $('#montarMesa').addClass('montarMesa');
+    $('#montarMesa button').addClass('botamEnviar');
+    $('#montarMesa').children().addClass('css').css({
+      color: 'black'
+    });
 
     button.addEventListener('click', () => {
     const selectedOptions = {};
@@ -193,23 +198,9 @@ $('#escolha').click(() => {
   });
 });
 
-$('#finalize').click(() => {
-    const selectedOptions = {};
 
-    const resinaInputs = document.querySelectorAll('input[name^="cor"]');
-    resinaInputs.forEach(input => {
-      if (input.checked) {
-        selectedOptions.resina = input.value;
-      }
-    });
+  const objtOp = JSON.parse(selectedOptions);
 
-    const madeiraInputs = document.querySelectorAll('input[name="madeira"]');
-    madeiraInputs.forEach(input => {
-      if (input.checked) {
-        selectedOptions.madeira = input.value;
-      }
-    });
-
-    const jsonData = JSON.stringify(selectedOptions);
-    console.log(jsonData);
-  });
+  function confirmar() {
+    confirm(`seus materiais escolhidos foram `);
+}

@@ -52,7 +52,7 @@ footer{
 }
 
 .montarMesa{
-    background-color: red;
+    background-color: darkgrey;
     display: flex;
     height: 32%;
     width: 28%;
@@ -70,4 +70,8 @@ button {
     margin-bottom: 2%;
     border-radius: 10px;
     cursor: pointer;
+}
+
+.botamEnviar{
+    background-color: aliceblue;
 }

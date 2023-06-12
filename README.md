@@ -92,12 +92,12 @@ Formulário
 
 jQuery
 
-- [ ] Uso de seletores CSS - id, classe e tag
-- [ ] Uso de seletores hierárquicos estáticos - ancestral/descendente, pai/filho, anterior/próximo
-- [ ] Uso de seletores hierárquicos dinâmicos - parent/children/next
+- [x] Uso de seletores CSS - id, classe e tag
+- [x] Uso de seletores hierárquicos estáticos - ancestral/descendente, pai/filho, anterior/próximo
+- [x] Uso de seletores hierárquicos dinâmicos - parent/children/next
 - [x] Efeitos fade ou slide
 - [x] Especificar o tratador de algum evento via jQuery
-- [ ] Manipulação do CSS via função css() e addClass()/removeClass()
+- [x] Manipulação do CSS via função css() e addClass()/removeClass()
 - [x] Manipulação do conteúdo de um input e div usando jQuery
 - [ ] Aplicar um plugin do jQuery (por exemplo, jQuery Mask Plugin)
 
