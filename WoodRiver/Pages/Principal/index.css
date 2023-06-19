@@ -42,3 +42,13 @@ footer{
     justify-content: space-around;
     font-size: 26px;
 }
+
+button{
+    font-size: 80%;
+    width: 10%;
+    height: 40px;
+    background-color: rgb(124, 225, 76);
+    margin-top: 1.5em;
+    border-radius: 10px;
+    cursor: pointer;
+}

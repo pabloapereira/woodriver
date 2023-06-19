@@ -5,6 +5,17 @@ import trocandoCorPre from '../Util/trocar-cor.js';
 
 const trocarPreco = new trocandoCorPre.TrocarPreco();
 
+/*const express = require('express');
+const handlebars = require('express-handlebars');
+const bodyParser = require('body-parser');
+const app = express();
+//const mongoose = require('mongoose');*/
+
+/*const PORTA = 8081;
+app.listen(PORTA, () => {
+  console.log('Servidor rodando');
+});*/
+
 let precos;
 
 addEventListener('load', function() {
@@ -49,8 +60,21 @@ setTimeout(() => {
     
 }, 15000);
 
+  fetch('http://localhost:3000/madeiras')
 
-$('#escolha').click(() => {
+  .then((response) => response.json())
+  .then((data) => escolher(data));
+
+  function escolher(madeiras) {
+    const htmlMadeiras = madeiras.map(
+      (madeira) => `
+        <input type=radio name="madeira">${madeira.name}
+      `
+    );
+    document.getElementById('ja').innerHTML = htmlMadeiras;
+  }
+
+/*$('#escolha').click(() => {
     const divMontarMesa = document.createElement('div');
     divMontarMesa.id = 'montarMesa';
     const fieldsetElement = document.createElement('fieldset');
@@ -169,6 +193,8 @@ $('#escolha').click(() => {
     const mainElement = document.getElementById('ja');
     mainElement.appendChild(divMontarMesa);
 
+    botaoFinalize = $('finalize');
+
     $('#montarMesa').addClass('montarMesa');
     $('#montarMesa button').addClass('botamEnviar');
     $('#montarMesa').children().addClass('css').css({
@@ -193,14 +219,20 @@ $('#escolha').click(() => {
       }
     });
 
-    const jsonData = JSON.stringify(selectedOptions);
+    jsonData = JSON.stringify(selectedOptions);
     console.log(jsonData);
+
+    //botaoFinalizar();
   });
 });
 
 
-  const objtOp = JSON.parse(selectedOptions);
+/*let botaoFinalize;
 
-  function confirmar() {
-    confirm(`seus materiais escolhidos foram `);
+function botaoFinalizar() {
+  botaoFinalize.addEventListener('click', ()=> {
+    console.log('teste');
+  });
 }
+
+botaoFinalizar();*/

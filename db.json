@@ -1,0 +1,38 @@
+{
+  "madeiras": [
+    {
+      "id": 1,
+      "name": "Carvalho"
+    },
+    {
+      "id": 2,
+      "name": "Imbuia"
+    },
+    {
+      "id": 3,
+      "name": "Pinus"
+    },
+    {
+      "id": 4,
+      "name": "Ipê Roxo"
+    }
+  ],
+  "resina": [
+    {
+      "id": 1,
+      "cor": "azul"
+    },
+    {
+      "id": 2,
+      "cor": "verde"
+    },
+    {
+      "id": 3,
+      "cor": "branco"
+    },
+    {
+      "id": 4,
+      "cor": "preto"
+    }
+  ]
+}
