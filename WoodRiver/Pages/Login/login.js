@@ -45,6 +45,7 @@ function validarCampo() {
   let erroSenha = document.getElementById('errorSenha');
 
   if(email !== localStorage.getItem('email')) {
+    //alertify.alert('email não cadastrado'); não funcionou
     return false;
   }
   
@@ -102,6 +103,10 @@ function caixaSugestao() {
   } else {
     sugestao.innerHTML = '';
   }
+  $('input').iCheck({
+    checkboxClass: 'icheckbox_flat-red',
+    radioClass: 'iradiobox_flat-red'
+  });
 }
 
 const sim = document.getElementById('formulario.yes');

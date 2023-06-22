@@ -52,3 +52,11 @@ button{
     border-radius: 10px;
     cursor: pointer;
 }
+
+.fraseCss{
+    font-size: 90%;
+    color: #0d150d;
+    margin-top: 1.2%;
+    margin-bottom: 1em;
+    margin-right: 70em;
+}
