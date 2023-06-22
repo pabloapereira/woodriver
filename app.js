@@ -5,13 +5,20 @@ const path = require('path');
 const port = 3000;
 const app = express();
 
-app.get('/', (req, res) => {
+app.use(express.json());
 
+app.get('/', (req, res) => {
+    res.status(200).send('Teste');
 });
 
-app.listen(port, err => {
-    if (err) {
-        return console.log('ERROR', err);
-    }
-    console.log(`Servidor rodando na porta ${port}`);
+app.use(
+    '/WoodRiver/Pages/Cor/cor.html',
+    express.static(path.join(__dirname, 'WoodRiver', 'Pages', 'Cor', 'cor'))
+  );
+  
+
+
+// escutar porta
+app.listen(port, () => {
+    console.log(`Servidor rodando na porta http://localhost:${port}`);
 });

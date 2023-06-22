@@ -2,7 +2,7 @@
 const p = document.getElementsByTagName('p');
 
 (function(){
-    alert('Essas são umas das nossas principais cores');
+    alertify.alert('Essas são umas das nossas principais cores');
 })();
 
 function corPreco() {

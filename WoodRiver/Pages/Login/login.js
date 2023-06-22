@@ -1,5 +1,8 @@
 'use strict';
 
+import pickadate from 'pickadate';
+
+
 const button = document.getElementsByName('button')[0];
 const tittle = document.getElementById('titulo');
 const fundoLogin = document.getElementById('login');

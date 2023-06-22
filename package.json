@@ -216,6 +216,7 @@
     "path-key": "^3.1.1",
     "path-parse": "^1.0.7",
     "path-to-regexp": "^0.1.7",
+    "pickadate": "^5.0.0-alpha.3",
     "pify": "^3.0.0",
     "pkg-conf": "^3.1.0",
     "please-upgrade-node": "^3.2.0",
@@ -291,6 +292,7 @@
     "yocto-queue": "^0.1.0"
   },
   "scripts": {
+    "dev": "nodemon app.js",
     "test": "echo \"Error: no test specified\" && exit 1",
     "json": "json-server --watch db.json"
   },
