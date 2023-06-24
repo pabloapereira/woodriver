@@ -10,3 +10,14 @@ function corPreco() {
     p[i].style.color = 'red';
   }
 }corPreco();
+
+function requisicaoCor() {
+  let url = 'http://localhost:1010/resinas';
+  $.get(url, function(data) {
+    console.log(data);
+  });
+}
+
+$(document).ready(function() {
+  requisicaoCor();
+});

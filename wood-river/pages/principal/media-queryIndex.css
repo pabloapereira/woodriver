@@ -1,5 +1,20 @@
-@media (min-width: 700px) {
+@media screen and (max-width: 520px) {
+    button{
+        width: 19%;
+    }
 
+    .fraseCss{
+        width: 20%;
+    }
+}
+
+@media screen and (min-width: 520px) {
+    button{
+        width: 20%;
+    }
+}
+
+@media screen and (min-width: 700px) {
     html{
         margin: 3em, 0em;
         align-items: center;
@@ -22,11 +37,5 @@
 
     footer{
         margin-bottom: 1%;
-    }
-}
-
-@media (min-width: 800px), handheld and (orientation: landscape){
-    html{
-        background-color: 
     }
 }

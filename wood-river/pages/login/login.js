@@ -1,8 +1,5 @@
 'use strict';
 
-import pickadate from 'pickadate';
-
-
 const button = document.getElementsByName('button')[0];
 const tittle = document.getElementById('titulo');
 const fundoLogin = document.getElementById('login');
@@ -92,7 +89,7 @@ email.addEventListener('invalid', function(event) {
 function caixaSugestao() {
   const op = document.querySelector('input[name="sexo"]:checked').id;
   const sim = document.getElementById('yes');
-  const sugestao = document.getElementById('#sugestao');
+  const sugestao = document.getElementById('sugestao');
 
   if(op === sim.id) {
     const inputText = document.createElement('input');
@@ -106,10 +103,6 @@ function caixaSugestao() {
   } else {
     sugestao.innerHTML = '';
   }
-  $('input').iCheck({
-    checkboxClass: 'icheckbox_flat-red',
-    radioClass: 'iradiobox_flat-red'
-  });
 }
 
 const sim = document.getElementById('formulario.yes');

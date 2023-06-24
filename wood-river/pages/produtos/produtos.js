@@ -1,7 +1,7 @@
 'use strict';
 
 
-import trocandoCorPre from '../Util/trocar-cor.js';
+import trocandoCorPre from '../util/trocar-cor.js';
 
 const trocarPreco = new trocandoCorPre.TrocarPreco();
 

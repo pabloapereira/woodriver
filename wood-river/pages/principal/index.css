@@ -8,11 +8,12 @@ a:hover {
 }
 
 html{
-     background-color: rgb(88, 81, 73);
+    background-color: rgb(88, 81, 73);
+    text-align: center;
 }
 
 nav{
-    width: 110%;
+    width: 100%;
     display: flex;
     justify-content: space-around;
     background-color: rgb(139, 69, 19);
@@ -49,6 +50,7 @@ button{
     height: 40px;
     background-color: rgb(124, 225, 76);
     margin-top: 1.5em;
+    margin-bottom: 20px;
     border-radius: 10px;
     cursor: pointer;
 }
@@ -56,7 +58,10 @@ button{
 .fraseCss{
     font-size: 90%;
     color: #0d150d;
+    background-color: rgb(139, 69, 19);
+    width: 20%;
+    text-align: center;
     margin-top: 1.2%;
-    margin-bottom: 1em;
-    margin-right: 70em;
+    margin-bottom: 2%;
+    margin-left: 40%;
 }

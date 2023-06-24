@@ -108,6 +108,6 @@ Web Storage
 - [x] Criar e guardar o dado de um cookie
 
 Ajax com Backend
-- [ ] Implementação funcional (basta fazer funcionar uma requisição) do backend em ExpressJS na plataforma Node e requisições AJAX.
+- [x] Implementação funcional (basta fazer funcionar uma requisição) do backend em ExpressJS na plataforma Node e requisições AJAX.
 - [x] Requisição AJAX de uma api fake - JSON Server
 - [x] requisição AJAX para uma API Rest pública 
