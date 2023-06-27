@@ -11,10 +11,23 @@ function corPreco() {
   }
 }corPreco();
 
-function requisicaoCor() {
+function requisicaoCor(resinas) {
   let url = 'http://localhost:1010/resinas';
+  
   $.get(url, function(data) {
-    console.log(data);
+    let resinas = data.resinas;
+    let disponivelDiv = document.getElementById('disponivel');
+    
+    for (let i = 0; i < resinas.length; i++) {
+      let corDiv = document.createElement('div');
+      let corNome = document.createElement('p');
+      
+      corNome.textContent = resinas[i].cor;
+      
+      corDiv.appendChild(corNome);
+      
+      disponivelDiv.appendChild(corDiv);
+    }
   });
 }
 
